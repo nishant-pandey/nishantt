@@ -1,0 +1,92 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+     height: 400px;
+    background-size: 100%;
+    background-attachment: fixed;
+   font-family: 'Poiret One', cursive;
+
+}
+.nav{
+    height: 80px;
+    background-color: black;
+    font-size: 15px;
+    margin:-10px -8px;
+    padding: 5px;
+}
+#logo{
+
+    font-size: 34px;
+    position: relative;
+    left: 150px;
+    font-weight:bold;
+    top: 15px;
+}
+
+
+a#scroll {
+    display: inline-block;
+    position: absolute;
+}
+
+.barstyle{
+			font-size: 18px;
+			font-weight:bold;
+			color: white; 
+			margin-left: 5px;
+			
+}
+
+a{
+ 	color: white;
+ 	cursor: pointer;
+ 	text-decoration: none;
+	font-size:18px;
+	padding-left: 10px;
+	padding-bottom: 30px;
+    margin-top:-10px;
+}
+a:hover{
+	color: grey;
+	text-decoration: none;
+	
+}
+#logo:hover{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+
+
+.text-right {
+    display: inline-block;
+    float: right;
+    position: relative;
+    right: 100px;
+	top: 20px;
+    font-size: 8px;
+}
+div.mainform{
+	background: url("contactform.png");
+background-repeat: no-repeat;
+position: relative;
+margin: -10px -8px ;
+top: -20px;
+}
+footer{
+    width:110%
+    height:40px;
+    font-size: 16px;
+    font-weight: bold;
+       background-color: black;
+    color:white;
+   display: block;
+    margin: -10px -8px;
+    position: relative;
+    top: -28px;
+    padding: 20px 10px;
+    overflow: hidden;
+}

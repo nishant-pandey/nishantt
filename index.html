@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			Home | Nishant Raj Pandey
+		</title>
+
+		<link rel="icon" type="image/gif" href="favicon.gif">
+
+		<link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="h.css">
+
+		<link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
+		<script src="https://use.fontawesome.com/1eca9bdf1e.js"></script>
+
+	</head>
+	<style>
+
+</style>
+<a name="scroll-to-top" id="scroll"></a>
+		<body >
+		<nav class="nav" >
+			
+			<a href="#" id="logo">
+				Nishant Raj Pandey
+			</a>
+			<div class="text-right">
+				
+				<a href="index.html" style = "font-weight: bold;" >
+					Home 
+				</a> <span class="barstyle"> |</span>
+				
+				<a href="contact.html"> 
+					<b>Contact me</b>
+				</a> <span class="barstyle"> |</span>
+				
+				<a href="portfolio.html">
+					<b>Portfolio </b>
+				</a><span class="barstyle"> |</span>
+				
+				<a href="blog.html" >
+					<b> Blogs </b> </a><span class="barstyle">|</span>		
+
+			    <a href="research.html">
+					<b>Research </b>
+				      </a>
+				
+			</div>
+		</nav>	
+<div class="container">
+			<div class="aboutme">
+			<fieldset>
+				<h2>About Me</h2>
+				<p> Hi! This is Nishant Raj Pandey. Currently living in lubhu lalitpur studying BSC(hons)Computing at Islington college, Kamalpokhari Kathamandu. I graduated my highschool from Brihaspati Vidyasadan in the year 2019
+				</p>
+				<a href="portfolio.html" class="button1" >
+					More about me
+				</a>
+			</fieldset>
+			<fieldset style="position: relative;left: 850px;">
+				<h2>Find me on</h2>
+				<a href = "https://www.instagram.com/?hl=ne"> <img src = "ins.jpg" width = 50px height = 45x; /></a>
+            <a href = "https://www.facebook.com/nishant.r.pandey.1"><img src = "fb.jpg" width = 50px height = 45px;/></a>
+            <a href="#"><img src="mail.png" width="45px height=30px;"></a> 
+				</p>
+				<a href="contact.html" class="button1" >
+					Contact Me
+				</a>
+			</fieldset>
+			</div>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="vintage car.jpg" style="width:100%">
+  <!-- <div class="text">Caption Text</div>  -->	
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="vc.jpg" style="width:100%">
+  <!-- <div class="text">Caption Two</div> -->
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="mero1.jpg" style="width:100%">
+  <!-- <div class="text">Caption Three</div> -->
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 6000); // Change image every 6 seconds
+}
+</script>
+<div class="gotoup">
+	<a href="#scroll-to-top" style="float: right;">Back to top <i class="fa fa-hand-o-up" aria-hidden="true"></i></a>
+</div>
+		
+   </div>
+           
+   
+<p id="demo" style="display:inline-block color black font-weight:bold;"></p>           
+</body>
+<footer><center>&copy; COPYRIGHT NISHANT Raj PANDEY 2020</center></footer>
+<script>
+var d = new Date();    //time
+document.getElementById("demo").innerHTML = d;
+</script>
+</html>
+		
+		

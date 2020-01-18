@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			Home | Nishant Raj Pandey
+		</title>
+
+		<link rel="icon" type="image/gif" href="favicon.gif">
+
+		<link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="p.css">
+
+		<link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
+
+	</head>
+<a name="scroll-to-top" id="scroll"></a>
+		<body >
+		<nav class="nav" >
+			
+			<a href="#" id="logo">
+				Nishant Raj Pandey
+			</a>
+			<div class="text-right">
+				
+				<a href="index.html" style = "font-weight: bold;" >
+					Home 
+				</a> <span class="barstyle"> |</span>
+				
+				<a href="#"> 
+					<b>Contact me</b>
+				</a> <span class="barstyle"> |</span>
+				
+				<a href="portfolio.html">
+					<b>Portfolio </b>
+				</a><span class="barstyle"> |</span>
+				
+				<a href="blog.html" >
+					<b> Blogs </b> </a><span class="barstyle">|</span>		
+
+			    <a href="research.html">
+					<b>Research </b>
+				</a>
+				
+			</div>
+
+		</nav> 	
+<html>
+    <head>
+            <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
+        <link href = "Untitled-2.css" type= "text/css" rel= stylesheet>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOQfNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+        <title>FeedBack</title>
+        <script type = "text/javascript">/* Javascript */
+        function ceck(){
+            var name = document.getElementById("fir");/* accessing the element by its unique ID */
+            var last = document.getElementById("las");
+            var mail = document.getElementById("email");
+            var conc = document.getElementById("mb");
+            var feed = document.getElementById("are");
+            var regx =/^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9-]+).([a-z][A-z]{2,4})(.[a-zA-z]{2,4})?$/; /*Regular Expression For E-mail Validation */
+            
+            if(regx.test(mail.value)){ /*Testing whether the input e-mail is valid or not */
+                
+            }else{
+                alert("Invalid e-mail");/* Alert Message incase of Invalid E-mail */
+                document.getElementById("label3").innerHTML= "In-valid E-mail ID";
+                document.getElementById("label3").style.visibility="visible";
+                mail.style.border = "solid 2px red";
+                return false;
+
+            }    
+            var regx = /^[9][8][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]$/; /* Regular Expression for E-mail Validation */
+           
+            if(regx.test(conc.value)){
+                
+             }else{
+                alert("Invalid Contact Number ");
+                document.getElementById("label4").innerHTML = "Invalid Number"
+                document.getElementById("label4").style.visibility="visible";
+                conc.style.border = "solid 2px red";
+                return false;
+
+             }   
+               
+
+
+           
+            if(name.value ==""){  /* checking whether the parameter is filled or empty */
+                alert("Empty First Name not allowed");
+                
+                document.getElementById("label1").style.visibility="visible";
+                name.style.border = "solid 2px red";
+                return false;
+        }
+        else if( last.value == ""){
+    
+            alert("Empty  Name not allowed");
+                document.getElementById("label2").style.visibility="visible";
+                last.style.border = "solid 2px red";
+                return false;
+                
+        }
+        else if( mail.value == ""){
+            alert("Empty E-mail not allowed");
+                document.getElementById("label3").style.visibility="visible";
+                mail.style.border = "solid 2px red";
+                return false;
+        }
+        else if(  conc.value == ""){
+                alert("Empty Contact Number not allowed");
+                document.getElementById("label4").style.visibility="visible";
+                conc.style.border = "solid 2px red";
+                return false;
+        }
+        else if( feed.value == ""){
+                alert("please fill the feedback form");
+                document.getElementById("label5").style.visibility="visible";
+                feed.style.border = "solid 2px red";
+                return false;
+        }
+          
+                
+
+            
+         else{
+              return  true;
+              
+
+            }
+           
+        }
+        
+        
+        
+        </script>
+        </head>
+        <body >
+                
+               
+                </div>
+                <center>
+               <div class = "mainform">
+               	 <h1>Contact Me</h1>
+                   <h1 style = "font-family:'Open Sans', sans-serif;" >Please fill the form<div id = nk style="width: 100%; border-bottom: 1px solid gray; ;"></div> </h1>
+                   <form onsubmit = "return ceck()" action = Feedbackpage.html>
+                   
+                    <p class = "Feedback">First Name: <br>
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                    <input id = "fir" type = "text" placeholder = "First Name" style =  "border:solid 1px black; height:40px; width:250px;" /><br>
+                    <label id = "label1" style = color:red;visibility:hidden;font-weight:bold;>Empty First Name</label><br><!--Defining a label incase of invalid or empty parameter. 
+                        Initally  label visibility is set to hidden. label will be visible only when it encounters invalid choice-->
+                    Last Name: <br>
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <input id = "las" type = "required" placeholder = "Last Name" style = "border:solid 1px black;height:40px; width:250px;"/><br>
+                    <label id = "label2" style = color:red;visibility:hidden;font-weight:bold;>Empty Last Name</label><br>
+                     E-mail: <br>
+                     <i class="fa fa-envelope-open-o" aria-hidden="true"></i>
+                    <input id = "email" type = "required" placeholder = "E-mail" style = "border:solid 1px black;height:40px; width:250px;"/><br>
+                    <label id = "label3" style = color:red;visibility:hidden;font-weight:bold;>Empty E-mail</label><br>
+                   
+                    Contact Number:<br>
+                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                    <input id = "mb" type = "required" placeholder = "Contact Number" style = "border:solid 1px black; height:40px; width:250px;" ><br>
+                    <label id = "label4" style = color:red;visibility:hidden;font-weight:bold;>Empty Contact Number</label><br>
+                    Feedback: <br>
+                   
+                    <textarea id = "are" name = "Message" placeholder="Your Message" rows = "10" cols = "50" style = "border:solid 1px black; font-weight: bold;"></textarea><br>
+                  <label id = "label5" style = color:red;visibility:hidden;font-weight:bold;>Empty Name</label><br>
+                        
+                 <button type = "submit" style = "border-radius:10px; height:35px; background-color:black;  color:white;">Send</button>
+                    </div>
+                    </center>
+                </p>
+             </form>
+             
+        </body>
+                <footer><center>&copy; COPYRIGHT NISHANT Raj PANDEY 2020</center></footer>
+</html>
+	</html>

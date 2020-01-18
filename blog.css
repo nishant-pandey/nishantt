@@ -1,0 +1,116 @@
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    
+    height: 400px;
+    background-size: 100%;
+    background-attachment: fixed;
+   font-family: 'Poiret One', cursive;
+   background-image: url("techbackground.jpg") 
+
+}
+.nav{
+    height: 80px;
+    background-color: black;
+    font-size: 15px;
+    margin:-10px -8px;
+    padding: 5px;
+}
+#logo{
+
+    font-size: 34px;
+    position: relative;
+    left: 150px;
+    font-weight:bold;
+    top: 15px;
+}
+
+
+a#scroll {
+    display: inline-block;
+    position: absolute;
+}
+
+.barstyle{
+            font-size: 18px;
+            font-weight:bold;
+            color: white; 
+            margin-left: 5px;
+            
+}
+
+a{
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    font-size:18px;
+    padding-left: 10px;
+    padding-bottom: 30px;
+    margin-top:-10px;
+}
+a:hover{
+    color: grey;
+    text-decoration: none;
+    
+}
+#logo:hover{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+
+
+.text-right {
+    display: inline-block;
+    float: right;
+    position: relative;
+    right: 100px;
+    top: 20px;
+    font-size: 8px;
+}
+
+.container{
+    float: left;
+    border: 1px solid black;
+    width: 101%;
+    margin: -10px -8px;
+}
+
+.bloglist{
+  display: inline-block;
+    border: 1px solid black;
+    width: 69.7%;
+    float: right;
+}
+
+.listitems{
+    border: 1px solid black;
+    display: inline-block;
+    width: 30%;
+}
+table{
+   
+    width: 100%;
+}
+a#blogtitle{
+    color: black;
+
+}
+
+footer{
+    width:100%
+    height:30x;
+    font-size: 16px;
+    font-weight: bold;
+       background-color: black;
+    color:white;
+     display: block;
+    margin:-10px -8px
+    position: relative;
+    top: 700px;
+    padding: 10px 10px;
+}
